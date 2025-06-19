@@ -1,0 +1,7 @@
+#ifndef PRINTF_VULN_DEMO_RES_H 
+#define PRINTF_VULN_DEMO_RES_H 
+
+#define IDS_STRING_1001 1001
+
+
+#endif  // PRINTF_VULN_DEMO_RES_H

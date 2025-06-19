@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BrewMPProperties ProjectName="printf_vuln_demo" Version="1.0">
+  <BuildSettings ActiveSetting="Default">
+    <CurrentPlatform>BREW 3.1.5 SP02</CurrentPlatform>
+    <ProjectSpecific>
+      <ARMCompiler Value="None" />
+      <ARMProcessor Value="ARM9" />
+    </ProjectSpecific>
+    <CustomBuild>
+      <Command>cs-make.exe -f "printf_vuln_demo.mak" install MIF_INSTALL_DIR=../ MOD_INSTALL_DIR=../</Command>
+      <CleanCommand>cs-make.exe -f "printf_vuln_demo.mak" deinstall MIF_INSTALL_DIR=../ MOD_INSTALL_DIR=../</CleanCommand>
+      <CustomBuildDirectory>c:\Users\Qwerty Keyboard\Documents\Visual Studio 2005\Projects\printf_vuln_demo\printf_vuln_demo\</CustomBuildDirectory>
+    </CustomBuild>
+    <DisableMakefileGeneration>False</DisableMakefileGeneration>
+    <Libraries>
+    </Libraries>
+    <Configuration Name="Debug" CompilerVariant="Win32">
+      <LibraryDirectories>
+      </LibraryDirectories>
+      <PreProcessorDefines>_DEBUG;AEE_SIMULATOR</PreProcessorDefines>
+    </Configuration>
+    <Configuration Name="Release" CompilerVariant="Win32">
+      <LibraryDirectories>
+      </LibraryDirectories>
+      <PreProcessorDefines>NDEBUG;AEE_SIMULATOR</PreProcessorDefines>
+    </Configuration>
+    <Configuration Name="Debug" CompilerVariant="ADS12arm9">
+      <LibraryDirectories>
+      </LibraryDirectories>
+      <PreProcessorDefines>_DEBUG;</PreProcessorDefines>
+    </Configuration>
+    <Configuration Name="Release" CompilerVariant="ADS12arm9">
+      <LibraryDirectories>
+      </LibraryDirectories>
+      <PreProcessorDefines>NDEBUG;</PreProcessorDefines>
+    </Configuration>
+    <Configuration Name="Debug" CompilerVariant="RVCT22arm9">
+      <LibraryDirectories>
+      </LibraryDirectories>
+      <PreProcessorDefines>_DEBUG;</PreProcessorDefines>
+    </Configuration>
+    <Configuration Name="Release" CompilerVariant="RVCT22arm9">
+      <LibraryDirectories>
+      </LibraryDirectories>
+      <PreProcessorDefines>NDEBUG;</PreProcessorDefines>
+    </Configuration>
+    <Configuration Name="Debug" CompilerVariant="RVCT22arm11">
+      <LibraryDirectories>
+      </LibraryDirectories>
+      <PreProcessorDefines>_DEBUG;</PreProcessorDefines>
+    </Configuration>
+    <Configuration Name="Release" CompilerVariant="RVCT22arm11">
+      <LibraryDirectories>
+      </LibraryDirectories>
+      <PreProcessorDefines>NDEBUG;</PreProcessorDefines>
+    </Configuration>
+    <Configuration Name="Debug" CompilerVariant="RVCT30arm9">
+      <LibraryDirectories>
+      </LibraryDirectories>
+      <PreProcessorDefines>_DEBUG;</PreProcessorDefines>
+    </Configuration>
+    <Configuration Name="Release" CompilerVariant="RVCT30arm9">
+      <LibraryDirectories>
+      </LibraryDirectories>
+      <PreProcessorDefines>NDEBUG;</PreProcessorDefines>
+    </Configuration>
+    <Configuration Name="Debug" CompilerVariant="RVCT30arm11">
+      <LibraryDirectories>
+      </LibraryDirectories>
+      <PreProcessorDefines>_DEBUG;</PreProcessorDefines>
+    </Configuration>
+    <Configuration Name="Release" CompilerVariant="RVCT30arm11">
+      <LibraryDirectories>
+      </LibraryDirectories>
+      <PreProcessorDefines>NDEBUG;</PreProcessorDefines>
+    </Configuration>
+    <Configuration Name="Debug" CompilerVariant="armgcc">
+      <LibraryDirectories>
+      </LibraryDirectories>
+      <PreProcessorDefines>_DEBUG;</PreProcessorDefines>
+    </Configuration>
+    <Configuration Name="Release" CompilerVariant="armgcc">
+      <LibraryDirectories>
+      </LibraryDirectories>
+      <PreProcessorDefines>NDEBUG;</PreProcessorDefines>
+    </Configuration>
+  </BuildSettings>
+  <PackageSettings>
+    <Packages ActivePackage="Default" InstallLocation="UserMods">
+      <Package Name="Default" AddNewBrewFiles="True">
+        <IncludedFiles>
+          <File>
+            <Name>printf_vuln_demo.mod</Name>
+            <SrcPath>$(BuildDir)\printf_vuln_demo.mod</SrcPath>
+            <DestPath>printf_vuln_demo\printf_vuln_demo.mod</DestPath>
+          </File>
+          <File>
+            <Name>printf_vuln_demo.dll</Name>
+            <SrcPath>$(BuildDir)\printf_vuln_demo.dll</SrcPath>
+            <DestPath>printf_vuln_demo\printf_vuln_demo.dll</DestPath>
+          </File>
+          <File>
+            <Name>printf_vuln_demo.mif</Name>
+            <SrcPath>$(BuildDir)\printf_vuln_demo.mif</SrcPath>
+            <DestPath>printf_vuln_demo\printf_vuln_demo.mif</DestPath>
+          </File>
+        </IncludedFiles>
+      </Package>
+    </Packages>
+  </PackageSettings>
+</BrewMPProperties>
